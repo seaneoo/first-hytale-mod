@@ -13,13 +13,6 @@ val releaseJar =
 
 repositories { mavenCentral() }
 
-dependencies {
-    implementation(
-        files(
-            System.getProperty("user.home") +
-                "/AppData/Roaming/Hytale/install/release/package/game/latest/Server/HytaleServer.jar"
-        )
-    )
-}
+dependencies { implementation(releaseJar) }
 
 tasks.processResources { filesMatching("manifest.json") { expand("version" to project.version) } }
