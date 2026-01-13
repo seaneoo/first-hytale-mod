@@ -1,0 +1,18 @@
+{
+  "Group": "seano",
+  "Name": "FirstHytaleMod",
+  "Version": "${version}",
+  "Description": "My first Hytale mod!",
+  "Authors": [
+    {
+      "Name": "seano"
+    }
+  ],
+  "Website": "https://seano.dev",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "dev.seano.hytale.FirstHytaleMod",
+  "IncludesAssetPack": true
+}
