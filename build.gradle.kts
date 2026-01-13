@@ -16,3 +16,5 @@ repositories { mavenCentral() }
 dependencies { implementation(releaseJar) }
 
 tasks.processResources { filesMatching("manifest.json") { expand("version" to project.version) } }
+
+tasks.jar { from("LICENSE") { rename { "${it}_${project.name}" } } }
